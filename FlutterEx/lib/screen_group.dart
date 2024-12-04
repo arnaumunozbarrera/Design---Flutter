@@ -1,5 +1,7 @@
 import 'package:exercici_flutter/data.dart';
+import 'package:exercici_flutter/screen_actions.dart';
 import 'package:exercici_flutter/screen_info.dart';
+import 'package:exercici_flutter/screen_list_users.dart';
 import 'package:exercici_flutter/screen_schedule.dart';
 import 'package:flutter/material.dart';
 
@@ -52,25 +54,21 @@ class _ScreenGroupState extends State<ScreenGroup> {
       } else if (label =="Schedule") { 
         Navigator.of(context).push(MaterialPageRoute<void>(
           builder: (context) => ScreenSchedule(
-            groupName: widget.userGroup.name,
+            schedule: widget.userGroup.schedule
           ),
         ));
       } else if (label =="Actions") { 
         Navigator.of(context).push(MaterialPageRoute<void>(
-          builder: (context) => ScreenSchedule(
-            groupName: widget.userGroup.name,
+          builder: (context) => ScreenActions(
+            groupActions: widget.userGroup.actions,
           ),
         ));
       } else if (label =="Places") { 
-        Navigator.of(context).push(MaterialPageRoute<void>(
-          builder: (context) => ScreenSchedule(
-            groupName: widget.userGroup.name,
-          ),
-        ));
+        
       } else if (label =="Users") { 
         Navigator.of(context).push(MaterialPageRoute<void>(
-          builder: (context) => ScreenSchedule(
-            groupName: widget.userGroup.name,
+          builder: (context) => ScreenListUsers(
+            users: widget.userGroup.users
           ),
         ));
       }

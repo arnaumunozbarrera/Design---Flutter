@@ -97,15 +97,15 @@ class Data {
   static String defaultDescription = "";
 
   static Map<String, String> images = {
-    'ana' : 'faces/ana.png',
-    'aureli' : 'faces/aureli.png',
-    'manel' : 'faces/manel.png',
-    'miquel' : 'faces/miquel.png',
-    'maria' : 'faces/maria.png',
-    'maure' : 'faces/maure.png',
-    'eva' : 'faces/eva.png',
-    'eulalia' : 'faces/eulalia.png',
-    'esteve' : 'faces/esteve.png',
-    'new user': 'faces/new_user.png',
+    'ana' : '../faces/ana.png',
+    'aureli' : '../faces/aureli.png',
+    'manel' : '../faces/manel.png',
+    'miquel' : '../faces/miquel.png',
+    'maria' : '../faces/maria.png',
+    'maure' : '../faces/maure.png',
+    'eva' : '../faces/eva.png',
+    'eulalia' : '../faces/eulalia.png',
+    'esteve' : '../faces/esteve.png',
+    'new user': '../faces/new_user.png',
   };
 }
